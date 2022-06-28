@@ -6,7 +6,7 @@
 }
 
 .bookList ul{
-    width: 50%;
+    max-width: 100%;
     list-style-type: none;
 }
 .bookList li{
@@ -15,11 +15,28 @@
     padding: 1rem;
     cursor: pointer;
     margin: 15px 0;
-    
     border-radius: 8px;
 }
 .empty{
     margin: 20px 0;
     text-align: center;
     font-size: 2rem;
+}
+
+@media screen and (max-width:680px) {
+    
+.bookList ul{
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+}
+
+
+.bookList li{
+    background: #6d3d6d;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
 }
